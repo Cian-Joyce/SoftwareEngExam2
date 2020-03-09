@@ -3,7 +3,7 @@
 * G00350885
 * 085216XXXX
 * g00350885@gmit.ie
-*
+*A class to test methods in the EmployeeList class
 * */
 
 
@@ -18,7 +18,7 @@ public class EmployeeListTest
     @BeforeEach
     public void setup()
     {
-        workerList = new EmployeeList();
+        workerList = new EmployeeList();    //create a fresh object before next test case
     }
    @Test
     public void testGetListSize()
@@ -31,7 +31,7 @@ public class EmployeeListTest
        assertEquals(2, workerList.getListSize());
    }
    @Test
-    public void testAddEmployeeCheck()
+    public void testAddEmployeeDuplicateCheck()
    {
        Employee worker1 = new Employee("Cian", 21, "01234567", "01234");
        workerList.addEmployee(worker1);

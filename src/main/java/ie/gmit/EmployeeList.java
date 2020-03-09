@@ -3,7 +3,8 @@
  * G00350885
  * 085216XXXX
  * g00350885@gmit.ie
- *
+ *A class for storing multiple Employee objects within an ArrayList, this class has checks in some methods to ensure there are
+ * no duplicates.
  * */
 package ie.gmit;
 
@@ -13,11 +14,12 @@ public class EmployeeList
 {
     private ArrayList <Employee> employeeList;
 
-    public EmployeeList(ArrayList<Employee> employeeList)
+    public EmployeeList(ArrayList<Employee> employeeList)   //overloaded constructor
     {
         this.employeeList = employeeList;
     }
-    public EmployeeList()
+
+    public EmployeeList()   //default constructor
     {
         employeeList = new ArrayList<Employee>();
     }

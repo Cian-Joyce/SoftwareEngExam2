@@ -3,7 +3,7 @@
  * G00350885
  * 085216XXXX
  * g00350885@gmit.ie
- *
+ *A class to test methods in the employee class
  * */
 package ie.gmit;
 
@@ -53,7 +53,6 @@ public class EmployeeTest
     public void testEmployeeSetName()
     {
         Employee worker = new Employee("Cian", 17, "08777666", "66666");
-        assertEquals("Cian", worker.getName());
         worker.setName("Sean");
         assertEquals("Sean", worker.getName());
     }
@@ -61,8 +60,21 @@ public class EmployeeTest
     public void testEmployeeSetAge()
     {
         Employee worker = new Employee("Cian", 17, "08777666", "66666");
-        assertEquals(17, worker.getAge());
         worker.setAge(18);
         assertEquals(18, worker.getAge());
+    }
+    @Test
+    public void testEmployeeSetPhone()
+    {
+        Employee worker = new Employee("Cian", 17, "08777666", "66666");
+        worker.setPhone("01234567");
+        assertEquals("01234567", worker.getPhone());
+    }
+    @Test
+    public void testEmployeeSetEmployeeNum()
+    {
+        Employee worker = new Employee("Cian", 17, "08777666", "66666");
+        worker.setEmployeeNumber("55555");
+        assertEquals("55555", worker.getEmployeeNumber());
     }
 }
